@@ -24,23 +24,45 @@ body {
       margin: 10px 15px; }
 
 .site-navbar {
-  display: table;
-  width: 100%; }
+  width: 100%;
+  text-align: justify; }
   .site-navbar .navicon {
-    width: 25%;
-    height: 35px;
-    background-color: red;
+    display: inline-block;
+    text-align: center;
+    width: 242px;
+    height: 30px;
+    background-color: #B4282F;
     color: white;
-    display: table-cell; }
+    margin: 10px 10px 10px 0;
+    float: left;
+    padding-top: 15px;
+    text-transform: uppercase; }
+    .site-navbar .navicon--text span {
+      padding: 0 25px; }
+
+.navicon:nth-child(4) {
+  margin-right: 0; }
 
 .hero {
-  background: url("../images/top-image.png");
+  background: url("../images/top-image.png") no-repeat;
+  background-position: 25% 25%;
+  border: 10px solid white;
   width: 100%;
-  height: 340px; }
+  height: 320px;
+  box-sizing: border-box; }
+  .hero img {
+    margin: 50px auto auto 20px; }
 
 .article--content {
-  background-color: white; }
+  background-color: white;
+  display: inline-block;
+  width: 32%;
+  margin-right: 3px; }
 
 .skateboard-lineup--board {
   display: inline-block;
   float: left; }
+
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
