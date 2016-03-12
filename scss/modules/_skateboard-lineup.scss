@@ -1,0 +1,11 @@
+.skateboard-lineup {
+  background-color: white;
+  border-bottom: 5px solid #aaa;
+    &--board {
+      text-align: center;
+      display: inline-block;
+      margin: 15px auto;
+      width: 10%;
+      float: left;
+  }
+}

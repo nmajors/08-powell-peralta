@@ -1,0 +1,45 @@
+.article{
+  margin: 20px auto;
+  width: 100%;
+
+  &--content {
+  background-color: white;
+  display: inline-block;
+  width: 26%;
+  height: 350px;
+  margin-right: 15px;
+  vertical-align: top;
+  padding: 10px 30px;
+  position: relative;
+  border-bottom: 5px solid #aaa;
+
+    &:nth-child(3) {
+      margin-right: 0;
+      }
+  }
+
+  &--headline {
+    font-weight:200;
+    line-height: .95;
+  }
+
+  &--date {
+    font-size: .85rem;
+    color: #bbb;
+  }
+
+  &--read-more {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 200px;
+    margin: 0 auto;
+
+
+      a {
+      text-decoration: none;
+      color: #B4282F;
+      font-weight:bold;
+      }
+    }
+  }
