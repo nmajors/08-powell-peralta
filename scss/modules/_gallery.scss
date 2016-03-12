@@ -1,0 +1,59 @@
+@mixin small-image{
+  width: 303px;
+  height: 168px;
+  border: 5px solid white;
+  padding: 55px 10px 0 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@mixin wide-image{
+  width: 644px;
+  height:168px;
+  border: 5px solid white;
+  padding: 55px 10px 0 10px;
+}
+
+@mixin tall-image{
+  padding-top: 195px;
+  width: 310px;
+  height: 270px;
+  border: 5px solid white;
+}
+
+.gallery {
+  color: white;
+  font-size: 2.75rem;
+  font-weight:600;
+  text-align: center;
+  text-transform: uppercase;
+  &--left {
+    float: left;
+  }
+  &--item1{
+    @include small-image;
+    background: url("../images/sk8er-4.png");
+    background-position: right;
+    float: left;
+  }
+  &--item2{
+    @include small-image;
+    background: url('../images/sk8er-3.png');
+    float: left;
+  }
+  &--item3{
+    @include wide-image;
+    background: url('../images/sk8er-1.png');
+    background-position: center;
+    clear: both;
+  }
+  &--right{
+    float: right;
+  }
+  &--item4{
+    @include tall-image;
+    background: url('../images/sk8er-2.png');
+    background-position: 80% 0;
+
+  }
+}
