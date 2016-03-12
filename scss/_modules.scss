@@ -1,21 +1,42 @@
+@mixin icon {
+  & {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 70px;
+    height: 55px;
+    color: #aaa;
+    display: inline-block;
+    border-bottom: 5px solid #aaa;
+    float: right;
+    padding-top: 10px;
+    margin-left: 15px;
+    }
+
+}
+
 .connect-navbar {
   clear: both;
-  height: 60px;
+  height: 75px;
 
-  &--icon {
-    width: 50px;
-    height: 50px;
-    color: #606060;
-    display: inline-block;
-    background-color: white;
-    margin: 2.5px;
-    border-bottom: 3px solid white;
-    float: right;
-    .fa {
-      margin: 10px 15px;
-    }
+  .youtube {
+    @include icon;
+    background-color:#B2382D;
+  }
+  .twitter {
+    @include icon;
+    background-color:#6A8DC7;
+  }
+  .rss {
+    @include icon;
+    background-color: #cc8f32;
+  }
+
+  .facebook{
+    @include icon;
+    background-color: #455696;
   }
 }
+
 
 .site-navbar {
   width: 100%;
@@ -28,14 +49,22 @@
     width: 242px;
     height: 30px;
     color: white;
-    margin: 10px 10px 10px 0;
+    margin: 15px 10px 20px 0;
     float: left;
     padding-top:15px;
     text-transform: uppercase;
     background-color: #B4282F;
+    border-bottom: 5px solid #aaa;
 
+    &--text {
+      font-weight:600;
+      padding: 0 15px;
+      display: inline-block;
+    }
     &--text span {
-      padding: 0 25px;
+      text-align: justify;
+      font-weight: 200;
+      padding: 0 20px;
     }
   }
 }
@@ -71,6 +100,7 @@
   vertical-align: top;
   padding: 10px 30px;
   position: relative;
+  border-bottom: 5px solid #aaa;
 
   &:nth-child(3) {
     margin-right: 0;
@@ -103,10 +133,16 @@
   }
 
 }
-
-.skateboard-lineup--board {
-  display: inline-block;
-  float: left;
+.skateboard-lineup {
+  background-color: white;
+  border-bottom: 5px solid #aaa;
+    &--board {
+      text-align: center;
+      display: inline-block;
+      margin: 15px auto;
+      width: 10%;
+      float: left;
+  }
 }
 
 .clearfix {
