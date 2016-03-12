@@ -2,6 +2,7 @@ body {
   font-family: Helvetica; }
 
 body {
+  margin: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg"); }
 
 .container {
@@ -11,7 +12,7 @@ body {
 .connect-navbar {
   clear: both;
   height: 60px; }
-  .connect-navbar .connect-icon {
+  .connect-navbar--icon {
     width: 50px;
     height: 50px;
     color: #606060;
@@ -20,7 +21,7 @@ body {
     margin: 2.5px;
     border-bottom: 3px solid white;
     float: right; }
-    .connect-navbar .connect-icon .fa {
+    .connect-navbar--icon .fa {
       margin: 10px 15px; }
 
 .site-navbar {
@@ -31,12 +32,12 @@ body {
     text-align: center;
     width: 242px;
     height: 30px;
-    background-color: #B4282F;
     color: white;
     margin: 10px 10px 10px 0;
     float: left;
     padding-top: 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    background-color: #B4282F; }
     .site-navbar .navicon--text span {
       padding: 0 25px; }
 
@@ -51,7 +52,7 @@ body {
   height: 320px;
   box-sizing: border-box; }
   .hero img {
-    margin: 50px auto auto 20px; }
+    margin: 31px auto 31px 20px; }
 
 .article {
   margin: 20px auto;
