@@ -1,16 +1,16 @@
 .site-navbar {
   width: 100%;
-  text-align: justify;
+  text-align: center;
 
 
   .navicon{
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
-    width: 242px;
+    width: 24%;
     height: 30px;
     color: white;
-    margin: 15px 10px 20px 0;
-    float: left;
+    margin: 15px .75% 20px 0;
     padding-top:15px;
     text-transform: uppercase;
     background-color: #B4282F;
@@ -18,13 +18,13 @@
 
     &--text {
       font-weight:600;
-      padding: 0 15px;
+      padding: 0 .5%;
       display: inline-block;
     }
     &--text span {
       text-align: justify;
       font-weight: 200;
-      padding: 0 20px;
+      padding: 0 .5%;
     }
   }
 }

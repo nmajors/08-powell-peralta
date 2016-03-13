@@ -2,11 +2,13 @@ body {
   font-family: Helvetica; }
 
 body {
-  margin: 5px 10%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg"); }
+  margin: 5px 5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .container {
-  width: 1000px;
+  width: 90%;
   margin: 0 auto; }
 
 .clearfix {
@@ -103,27 +105,27 @@ body {
 
 .site-navbar {
   width: 100%;
-  text-align: justify; }
+  text-align: center; }
   .site-navbar .navicon {
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
-    width: 242px;
+    width: 24%;
     height: 30px;
     color: white;
-    margin: 15px 10px 20px 0;
-    float: left;
+    margin: 15px .75% 20px 0;
     padding-top: 15px;
     text-transform: uppercase;
     background-color: #B4282F;
     border-bottom: 5px solid #aaa; }
     .site-navbar .navicon--text {
       font-weight: 600;
-      padding: 0 15px;
+      padding: 0 .5%;
       display: inline-block; }
     .site-navbar .navicon--text span {
       text-align: justify;
       font-weight: 200;
-      padding: 0 20px; }
+      padding: 0 .5%; }
 
 .navicon:nth-child(4) {
   margin-right: 0; }
