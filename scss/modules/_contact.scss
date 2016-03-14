@@ -13,11 +13,19 @@
 
 .contact {
   background-color: white;
+  padding: 30px auto;
+
 
   &--left {
     float: left;
     width: 45%;
     margin: auto 5%;
+
+  h1 {
+    font-weight:300;
+    line-height: .9;
+  }
+
 
       .contact--connect-navbar {
       height: 30px;
@@ -44,14 +52,33 @@
     }
   }
   &--right {
-    width: 45%;
+    width: 40%;
     float: right;
+    margin: auto 5% auto 0;
+
 
     .form-item {
-      margin: 20px auto;
-      input, textarea {
-        width: 90%;
+        margin: 20px auto;
+          input, textarea {
+          line-height: 2;
+          width: 100%;
+        }
+      }
+
+    .form-submit {
+        text-align: center;
+        width: 50%;
+        height: 30px;
+        color: white;
+        padding-top:15px;
+        background-color: #B4282F;
+        float:right;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 200;
+        }
       }
     }
-  }
 }
