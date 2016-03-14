@@ -1,0 +1,57 @@
+@mixin contact--connect-navbar--icon {
+  & {
+    text-align: center;
+    width: 30px;
+    height: 23px;
+    color: #aeaeae;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    padding-top: 7px;
+    }
+}
+
+.contact {
+  background-color: white;
+
+  &--left {
+    float: left;
+    width: 45%;
+    margin: auto 5%;
+
+      .contact--connect-navbar {
+      height: 30px;
+      float: left;
+
+      .facebook {
+        @include contact--connect-navbar--icon;
+        background-color: #4f4f4f;
+      }
+      .rss {
+        @include contact--connect-navbar--icon;
+        color: #aaa;
+        background-color:#666;
+      }
+      .twitter {
+        @include contact--connect-navbar--icon;
+        background-color: #7a7a7a;
+      }
+
+      .youtube{
+        @include contact--connect-navbar--icon;
+        background-color: #757575;
+      }
+    }
+  }
+  &--right {
+    width: 45%;
+    float: right;
+
+    .form-item {
+      margin: 20px auto;
+      input, textarea {
+        width: 90%;
+      }
+    }
+  }
+}
