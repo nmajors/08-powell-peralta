@@ -24,9 +24,9 @@ body {
     display: inline-block;
     width: 28%;
     height: 355px;
-    margin-right: 1%;
+    margin-right: 15px;
+    padding: 21px;
     vertical-align: middle;
-    padding: 10px 2%;
     position: relative;
     box-shadow: 0 5px rgba(192, 192, 192, 0.7); }
     .article--content:nth-child(3) {
@@ -170,60 +170,68 @@ body {
   text-align: center;
   text-transform: uppercase; }
   .gallery--left {
-    float: left; }
+    display: inline-block;
+    float: left;
+    width: 68%; }
   .gallery--item1 {
-    width: 303px;
+    display: inline-block;
+    width: 43%;
     height: 168px;
     border: 5px solid white;
-    padding: 55px 10px 0 10px;
-    margin-right: 10px;
+    padding: 55px 13px 0 10px;
+    margin-right: 15px;
     margin-bottom: 10px;
     box-shadow: 0 5px rgba(192, 192, 192, 0.7);
     background: url("../images/sk8er-4.png");
     background-position: right;
     float: left; }
   .gallery--item2 {
-    width: 303px;
+    display: inline-block;
+    width: 43%;
     height: 168px;
     border: 5px solid white;
-    padding: 55px 10px 0 10px;
-    margin-right: 10px;
+    padding: 55px 13px 0 10px;
+    margin-right: 15px;
     margin-bottom: 10px;
     box-shadow: 0 5px rgba(192, 192, 192, 0.7);
     background: url("../images/sk8er-3.png");
     float: left; }
   .gallery--item3 {
-    width: 644px;
+    display: inline-block;
+    width: 93%;
     height: 168px;
     border: 5px solid white;
-    padding: 55px 10px 0 10px;
+    padding: 55px 13px 0 10px;
+    margin: 5px 5px 0 0;
     box-shadow: 0 5px rgba(192, 192, 192, 0.7);
     background: url("../images/sk8er-1.png");
     background-position: center;
-    clear: both; }
+    float: left; }
   .gallery--right {
-    float: right; }
+    display: inline-block;
+    width: 31%;
+    float: left; }
   .gallery--item4 {
     padding-top: 195px;
-    width: 310px;
+    display: inline-block;
+    width: 100%;
     height: 270px;
     border: 5px solid white;
     box-shadow: 0 5px rgba(192, 192, 192, 0.7);
-    position: relative;
-    z-index: 10;
     background: url("../images/sk8er-2.png");
     background-position: 80% 0; }
 
 .contact {
   background-color: white;
-  padding: 30px auto; }
+  padding-top: 20px;
+  margin: 15px auto; }
   .contact--left {
     float: left;
-    width: 45%;
-    margin: auto 5%; }
-    .contact--left h1 {
-      font-weight: 300;
-      line-height: .9; }
+    width: 50%;
+    margin: 0 5% auto 2.5%;
+    line-height: 1.5; }
+    .contact--left h2 {
+      font-weight: 300; }
     .contact--left .contact--connect-navbar {
       height: 30px;
       float: left; }
@@ -231,56 +239,60 @@ body {
         background-color: #4f4f4f; }
         .contact--left .contact--connect-navbar .facebook {
           text-align: center;
-          width: 30px;
-          height: 23px;
+          width: 35px;
+          height: 29px;
           color: #aeaeae;
           display: inline-block;
           float: left;
           margin-right: 5px;
-          padding-top: 7px; }
+          padding-top: 6px; }
       .contact--left .contact--connect-navbar .rss {
         color: #aaa;
         background-color: #666; }
         .contact--left .contact--connect-navbar .rss {
           text-align: center;
-          width: 30px;
-          height: 23px;
+          width: 35px;
+          height: 29px;
           color: #aeaeae;
           display: inline-block;
           float: left;
           margin-right: 5px;
-          padding-top: 7px; }
+          padding-top: 6px; }
       .contact--left .contact--connect-navbar .twitter {
         background-color: #7a7a7a; }
         .contact--left .contact--connect-navbar .twitter {
           text-align: center;
-          width: 30px;
-          height: 23px;
+          width: 35px;
+          height: 29px;
           color: #aeaeae;
           display: inline-block;
           float: left;
           margin-right: 5px;
-          padding-top: 7px; }
+          padding-top: 6px; }
       .contact--left .contact--connect-navbar .youtube {
         background-color: #757575; }
         .contact--left .contact--connect-navbar .youtube {
           text-align: center;
-          width: 30px;
-          height: 23px;
+          width: 35px;
+          height: 29px;
           color: #aeaeae;
           display: inline-block;
           float: left;
           margin-right: 5px;
-          padding-top: 7px; }
+          padding-top: 6px; }
   .contact--right {
-    width: 40%;
-    float: right;
-    margin: auto 5% auto 0; }
+    width: 39%;
+    float: left;
+    margin: auto 2.5% auto 0; }
     .contact--right .form-item {
       margin: 20px auto; }
       .contact--right .form-item input, .contact--right .form-item textarea {
+        font-size: 1.1rem;
         line-height: 2;
-        width: 100%; }
+        width: 100%;
+        border: 1px solid #aaa;
+        box-shadow: inset 3px 3px rgba(192, 192, 192, 0.7);
+        resize: none; }
     .contact--right .form-submit {
       text-align: center;
       width: 50%;
@@ -288,7 +300,8 @@ body {
       color: white;
       padding-top: 15px;
       background-color: #B4282F;
-      float: right; }
+      float: right;
+      margin-bottom: 30px; }
       .contact--right .form-submit a {
         text-decoration: none;
         color: white;
