@@ -9,9 +9,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+main {
+  margin-bottom: 20px;
+}
 .container {
-  width:90%;
+  max-width: 940px;
   margin: 0 auto;
 }
 
